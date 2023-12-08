@@ -9,10 +9,9 @@ public class WeeklyCalendarFrame extends JFrame {
         WeeklyCalendarPanel.design(); //adding design method
 
         setTitle("Weekly Calendar");
-        //setLayout(new BorderLayout()); //this codes doesnt do anything
         setIconImage(image.getImage()); //place logo in frame (switches out java logo)
         WeeklyCalendarPanel weekPanel = new WeeklyCalendarPanel();
-        add(weekPanel); // removed - BorderLayout.NORTH) because code doesnt do anything
+        add(weekPanel);
         pack();
         setLocationRelativeTo(null);
         setResizable(false);
